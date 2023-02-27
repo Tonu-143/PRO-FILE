@@ -1,7 +1,7 @@
 #Github : HASAN
 from os import path
 import os,base64,zlib,pip,urllib
-os.system('xdg-open https://facebook.com/groups/551365756758487/')
+os.system('xdg-open https://www.facebook.com/groups/672751520627850/?ref=share')
 try:
         import os,requests,json,time,re,random,sys,uuid,string,subprocess
         from string import *
